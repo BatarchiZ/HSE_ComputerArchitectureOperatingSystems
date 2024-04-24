@@ -1,0 +1,14 @@
+
+#!/bin/bash
+echo -n "Enter your name:"
+read -t 5 NAME
+RETVAL=$?
+if [ $RETVAL -eq 0 ]; then
+        echo "Hello, $NAME"
+else
+        echo ""
+        echo "Hello, tmpuser?"
+fi
+
+
+
